@@ -27,7 +27,7 @@ namespace :deploy do
     run "ln -s #{shared_path}/public/system #{current_path}/public/system"
   end
    task :dev_migrate do
-     run "cd /opt/codeapp/current; rake db:migrate"
+     run "cd /opt/gitdeployapp/current; rake db:migrate"
    end
    task :restart do
      run "/opt/nginx/sbin/nginx -s reload"

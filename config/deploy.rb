@@ -4,9 +4,9 @@ set :application, "gitdeployapp"
 set :branch, "master"
 set :repository,  "https://github.com/railsfans/gitdeployapp.git"
 set :scm, "git"
-set :user, "railsfans" # 一個伺服器上的帳戶用來放你的應用程式，不需要有sudo權限，但是需要有權限可以讀取Git repository拿到原始碼
+set :user, "root" # 一個伺服器上的帳戶用來放你的應用程式，不需要有sudo權限，但是需要有權限可以讀取Git repository拿到原始碼
 set :port, "22"
- 
+set :use_sudo, false 
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
